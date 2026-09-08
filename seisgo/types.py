@@ -793,7 +793,7 @@ class CorrData(object):
                             cc_array = cc0[tindx,:]
 
                             # do stacking
-                            if nstacks==1: cc_array[0, :]
+                            if nstacks==1: dstack=cc_array
                             else:
                                 dstack = stacking.seisstack(cc_array,method=method,par=stack_par)
 
